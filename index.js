@@ -22,7 +22,7 @@ const apiRequestConfig = {
     }
   };
 
-axios(apiRequestConfig)
+axiosInstance(apiRequestConfig)
 .then(response => {
     const { data } = response;
     console.log(`IP address: ${data.ip}`);
